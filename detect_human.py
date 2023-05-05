@@ -13,6 +13,11 @@ upper_body_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + "haarcascade_
 # cv2.startWindowThread()
 
 # open webcam video stream
+# Initialize and start realtime video capture from IP camera
+# cam = cv2.VideoCapture(
+#     "rtsp://IP Adress:Port/user=admin&password=admin@123&channel=1&stream=1.sdp?"
+# )
+# cam = cv2.VideoCapture('rtsp://IP Adress:Port/user=admin&password=admin@123$&channel=3&stream=1.sdp?')
 cap = cv2.VideoCapture(0)
 
 # # the output will be written to output.avi
